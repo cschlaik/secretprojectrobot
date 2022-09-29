@@ -1,0 +1,223 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+text-shadow: 0 0 3px #FF0000;
+text-decoration: none;
+}
+
+p{
+  font-size: 18px;
+  color: #8054bb;
+}
+
+.textBlock{
+  padding: 25px;
+  width: 80%;
+  margin: auto;
+}
+
+.subheading{
+  font-size: 30px;
+  color: white;
+  padding-left: 25px;
+  padding-top: 50px;
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  transform: rotate(20deg);
+}
+/* Create two equal columns that floats next to each other */
+.smallCol {
+  /* position: relative; */
+  float: left;
+  width: 35%;
+  padding: 5px;
+}
+
+.bigCol {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-top: 30px;
+}
+
+.row{
+  height: auto;
+    min-height: 100% !important;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#cd{
+  animation: rotation 25s infinite linear;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+#coverart{
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+#coverart:hover{
+  transform: scale(1.5);
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+  .song{
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.song:hover .tooltiptext {
+  visibility: visible;
+    opacity: 1;
+}
+
+.artist{
+    color: white;
+}
+
+.playlistContainer{
+  width: 70%;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  /* text-align: center; */
+}
+
+/* Set colors of tooltiptext per section */
+.aspiration .tooltiptext{
+background-color: #76b7b9;
+}
+
+.aspiration .tooltiptext::after{
+ border-color: transparent #76b7b9 transparent transparent;
+}
+
+.materialization .tooltiptext{
+background-color: #e799aa;
+}
+
+.materialization .tooltiptext::after{
+ border-color: transparent #e799aa transparent transparent;
+}
+
+.seduction .tooltiptext{
+background-color: #a80e34;
+}
+
+.seduction .tooltiptext::after{
+ border-color: transparent #a80e34 transparent transparent;
+}
+
+.attack .tooltiptext{
+background-color: #78b854;
+}
+
+.attack .tooltiptext::after{
+ border-color: transparent #78b854 transparent transparent;
+}
+
+.submission .tooltiptext{
+background-color: #0065d5;
+}
+
+.submission .tooltiptext::after{
+ border-color: transparent #0065d5 transparent transparent;
+}
+
+.transcendance .tooltiptext{
+background-color: #ff4da6;
+}
+
+.transcendance .tooltiptext::after{
+ border-color: transparent #ff4da6 transparent transparent;
+}
+
+.playlistSection{
+  height: auto;
+    min-height: 100% !important;
+    padding-top: 0px;
+    padding-bottom: 125px;
+}
+/* Clear floats after the columns */
+.playlistSection:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.titleCol {
+  position: relative;
+  float: left;
+  width: 35%;
+  padding: 5px;
+}
+
+.songCol {
+  float: left;
+  width: 60%;
+  padding: 5px;
+}
+
+.playlist-item{
+  padding: 15px;
+}
+
+.song .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  /* background-color: pink; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  opacity: 0;
+transition: opacity 1s;
+}
+
+.song .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  /* border-color: transparent pink transparent transparent; */
+}
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
